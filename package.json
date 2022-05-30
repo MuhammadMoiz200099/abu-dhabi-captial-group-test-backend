@@ -1,0 +1,19 @@
+{
+  "name": "abu-dhabi-captial-group-test-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuhammadMoiz200099/abu-dhabi-captial-group-test-backend.git"
+  },
+  "author": "Muhammad Moiz Siddique",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuhammadMoiz200099/abu-dhabi-captial-group-test-backend/issues"
+  },
+  "homepage": "https://github.com/MuhammadMoiz200099/abu-dhabi-captial-group-test-backend#readme"
+}
