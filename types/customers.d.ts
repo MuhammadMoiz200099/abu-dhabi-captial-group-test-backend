@@ -1,4 +1,4 @@
-import { Document, PaginateModel } from "mongoose";
+import { Document } from "mongoose";
 
 export interface ICustomers extends Document {
   fullname: string;
@@ -10,4 +10,4 @@ export interface ICustomers extends Document {
   phone_number: string;
 }
 
-export interface ICustomersModel<T extends Document> extends PaginateModel<T> { }
+export interface ICustomersModel<T extends Document> { }

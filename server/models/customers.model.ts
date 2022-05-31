@@ -18,8 +18,7 @@ const CustomersSchema = new Schema<ICustomersModel<ICustomers>>({
     required: true
   },
   picture: {
-    type: Types.String,
-    required: true
+    type: Types.String
   },
   gender: {
     type: Types.String,
