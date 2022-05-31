@@ -9,7 +9,7 @@ export class Controller extends BaseController {
   async getCustomers(req: Request, res: Response): Promise<void> {
     try {
       const response = await CustomersService.getCustomers();
-      super.response(res, response, 200, "");
+      super.response(res, response, 200, "Customers Feteched Successfully");
     }
     catch (error) {
       logger.error(error);
@@ -22,7 +22,7 @@ export class Controller extends BaseController {
   async postCustomers(req: Request, res: Response): Promise<void> {
     try {
       const response = await CustomersService.addCustomers(req.body);
-      super.response(res, response, 200, "");
+      super.response(res, response, 200, "Customer added Successfully");
     }
     catch (error) {
       logger.error(error);
