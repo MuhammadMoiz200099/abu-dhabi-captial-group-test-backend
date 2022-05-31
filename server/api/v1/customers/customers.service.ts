@@ -6,10 +6,10 @@ export class CustomersService {
 
   constructor() { }
 
-  async getCustomers(options): Promise<PaginateResult<ICustomers>> {
+  async getCustomers(): Promise<Array<ICustomers>> {
     return new Promise(async (resolve, reject) => {
       try {
-        const get = await Customers.paginate({}, { ...options });
+        const get = await Customers.find({ }).sort({ _id: 'asc' });
         return resolve(get);
       } catch (error) {
         return reject(error);

@@ -1,6 +1,5 @@
 import { Schema, model } from 'mongoose';
 import { ICustomersModel, ICustomers } from '../../types/customers';
-import paginate from "mongoose-paginate-v2";
 
 export const CustomersName = 'Customers';
 const { Types } = Schema;
@@ -36,6 +35,5 @@ const CustomersSchema = new Schema<ICustomersModel<ICustomers>>({
   }
 });
 
-CustomersSchema.plugin(paginate);
 
 export const Customers = model<ICustomers>(CustomersName, CustomersSchema) as ICustomersModel<ICustomers>;

@@ -8,10 +8,7 @@ export class Controller extends BaseController {
 
   async getCustomers(req: Request, res: Response): Promise<void> {
     try {
-      const response = await CustomersService.getCustomers({
-        page: +(req.query.page || 1),
-        limit: +(req.query.limit || 10)
-      });
+      const response = await CustomersService.getCustomers();
       super.response(res, response, 200, "");
     }
     catch (error) {
