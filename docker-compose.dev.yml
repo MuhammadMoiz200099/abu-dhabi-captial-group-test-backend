@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: abu-dhabi-captial-group-test-backend
+    image: abu-dhabi-captial-group-test-backend 
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 9000:9000
